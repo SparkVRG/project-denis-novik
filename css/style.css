@@ -186,18 +186,17 @@ body {
 }
 
 .container_about {
-    padding: 117px 0;
+    padding: 114px 0;
 }
 
-.about__title {
+.section-title {
     font-family: 'Gilroy-Bold', sans-serif;
     font-size: 34px;
     color: #070707;
     text-align: center;
 }
 
-.about__description {
-    margin-top: 27px;
+.section-description {
     font-family: 'Gilroy-Medium', sans-serif;
     font-size: 18px;
     line-height: 22px;
@@ -205,7 +204,11 @@ body {
     text-align: center;
 }
 
-.about__description:nth-of-type(n+2) {
+.section-description_about {
+    margin-top: 27px;
+}
+
+.section-description_about:nth-of-type(n+2) {
     margin-top: 43px;
 }
 
@@ -219,11 +222,109 @@ body {
         padding: 77px 32px;
     }
 
-    .about__description {
+    .section-description_about {
         margin-top: 39px;
     }
 
-    .about__description br {
+    .section-description_about br {
         display: none;
     }
+}
+
+.skills {
+    outline: 1px solid black;
+    min-width: 320px;
+}
+
+.container_skills {
+    padding: 87px 0 108px;
+}
+
+.section-description_skills {
+    margin-top: 61px;
+}
+
+.skills__programs-list {
+    outline: 1px solid black;
+    margin-top: 88px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills__programs-item {
+    outline: 1px solid black;
+    width: 177px;
+    text-align: center;
+}
+
+.skills__programs-item figure img {
+    width: 89px;
+    height: 88px;
+}
+
+.skills__programs-item figcaption {
+    outline: 1px solid black;
+    box-sizing: border-box;
+    margin-top: 20px;
+    height: 34px;
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+}
+
+.skills__programs-item > img {
+    margin-top: 34px;
+    width: 170px;
+}
+
+@media screen and (max-width: 800px) {
+    .skills__programs-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-gap: 100px 0;
+    }
+
+    .skills__programs-item {
+        margin: 0 60px;
+    }
+}
+
+@media screen and (max-width: 594px) {
+    .skills__programs-list {
+        grid-gap: 70px 0;
+    }
+
+    .skills__programs-item {
+        margin: 0 40px;
+    }
+}
+
+@media screen and (max-width: 514px) {
+    .skills__programs-list {
+        grid-gap: 35px 0;
+    }
+
+    .skills__programs-item {
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width: 434px) {
+    .container_skills {
+        padding: 81px 0 95px;
+    }
+
+    .section-description_skills {
+        margin-top: 42px;
+    }
+
+    .skills__programs-list {
+        grid-gap: 78px 0;
+        margin-top: 76px;
+    }
+}
+
+.portfolio {
+    outline: 1px solid black;
 }
