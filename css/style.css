@@ -1,0 +1,229 @@
+body {
+    height: 1000px;
+}
+
+.header {
+    outline: 1px solid black;
+    min-width: 320px;
+}
+
+.container {
+    outline: 1px solid black;
+    position: relative;
+    margin: 0 auto;
+    width: 944px;
+    overflow: hidden;
+}
+
+.header__nav {
+    outline: 1px solid black;
+    height: 86px;
+}
+
+.header__nav-mobile-toggle {
+    border: none;
+    background: none;
+    position: absolute;
+    top: 68px;
+    right: 30px;
+    display: none;
+    padding: 0;
+    width: 33px;
+    height: 20px;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.header__nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.header__nav-item a {
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 18px;
+    color: #828282;
+    text-decoration: none;
+}
+
+.header__nav-item_active a {
+    color: #070707;
+}
+
+.header__delimiter {
+    border: 1px solid #828282;
+    margin: 0 auto;
+    width: 99%;
+}
+
+.header__title-wrapper {
+    outline: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__title {
+    outline: 1px solid black;
+    margin-top: 31px;
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 47.3px;
+    line-height: 57px;
+    color: #070707;
+}
+
+.header__description {
+    outline: 1px solid black;
+    margin-top: 92px;
+    margin-left: -53px;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+}
+
+.header__languages-info {
+    outline: 1px solid black;
+    margin-top: 61px;
+}
+
+.header__photo-desktop {
+    outline: 1px solid black;
+    margin-top: 43px;
+    width: 100%;
+    height: 387px;
+    object-fit: cover;
+}
+
+.header__photo-mobile {
+    outline: 1px solid black;
+    display: none;
+    margin: 41px auto 0;
+    width: 84%;
+    height: 477px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 944px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header__nav-mobile-toggle {
+        display: block;
+        z-index: 2;
+    }
+
+    .header__nav {
+        outline: 1px solid black;
+        background-color: #FFFFFF;
+        position: absolute;
+        top: 55px;
+        right: -101%;
+        display: block;
+        padding: 11px 0;
+        width: 100%;
+        height: auto;
+        transition: right 0.2s;
+        z-index: 1;
+    }
+
+    .header__nav-list {
+        display: block;
+        padding-left: 30px;
+    }
+
+    .header__nav-item:nth-of-type(n+2) {
+        margin-top: 28px;
+    }
+
+    .header__delimiter {
+        display: none;
+    }
+
+    .header__title-wrapper {
+        display: block;
+    }
+
+    .header__title {
+        margin-top: 55px;
+        margin-left: 26px;
+    }
+
+    .header__description {
+        margin-top: 22px;
+        margin-left: 28px;
+    }
+
+    .header__languages-info {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .header__photo-desktop {
+        display: none;
+    }
+    
+    .header__photo-mobile {
+        display: block;
+    }
+}
+
+.main {
+    outline: 1px solid black;
+    min-width: 320px;
+    padding-top: 102px;
+}
+
+.about {
+    outline: 1px solid black;
+    background-color: #F6F6F6;
+    min-width: 320px;
+}
+
+.container_about {
+    padding: 117px 0;
+}
+
+.about__title {
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 34px;
+    color: #070707;
+    text-align: center;
+}
+
+.about__description {
+    margin-top: 27px;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+    text-align: center;
+}
+
+.about__description:nth-of-type(n+2) {
+    margin-top: 43px;
+}
+
+@media screen and (max-width: 375px) {
+    .main {
+        padding-top: 84px;
+    }
+
+    .container_about {
+        box-sizing: border-box;
+        padding: 77px 32px;
+    }
+
+    .about__description {
+        margin-top: 39px;
+    }
+
+    .about__description br {
+        display: none;
+    }
+}

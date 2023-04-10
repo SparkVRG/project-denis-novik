@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold?styles=20876,20879" rel="stylesheet">
+    <title>Denis Novik</title>
+</head>
+<!-- Использовать универсальный контейнер -->
+<!-- В чек-лист - cursor pointer и hover на все интерактивные элементы -->
+<body>
+    <header class="header">
+        <div class="container">
+            <button class="header__nav-mobile-toggle" onclick="mobileMenuToggle()">
+                <img src="images/icon-nav-mobile-toggle-open.svg" alt="Menu open button">
+            </button>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <!-- Сделать динамичный active -->
+                    <li class="header__nav-item header__nav-item_active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#">About me</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#">Skills</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__delimiter"></div>
+            <div class="header__title-wrapper">
+                <h1 class="header__title">Denis<br>Novik</h1>
+                <p class="header__description">UX | UI designer<br>24 years old, Minsk</p>
+                <!-- Уточнить насчёт alt в иконках -->
+                <img src="images/icon-languages-info.svg" alt="" class="header__languages-info">
+            </div>
+            <img src="images/header-photo.png" alt="Denis Novik photo" class="header__photo-desktop">
+            <img src="images/header-photo-mobile.png" alt="Denis Novik photo" class="header__photo-mobile">
+        </div>
+    </header>
+    <main class="main">
+        <section class="about">
+            <div class="container container_about">
+                <h2 class="about__title">About me</h2>
+                <p class="about__description">Hi, I'm Denis – UX/UI designer from Minsk. <br>I'm interested in design and everything connected with it.</p>
+                <p class="about__description">I'm studying at courses "Web and mobile design <br>interfaces" in IT-Academy.</p>
+                <p class="about__description">Ready to implement excellent projects <br>with wonderful people.</p>
+            </div>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
