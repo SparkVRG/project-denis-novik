@@ -3,12 +3,10 @@ body {
 }
 
 .header {
-    outline: 1px solid black;
     min-width: 320px;
 }
 
 .container {
-    outline: 1px solid black;
     position: relative;
     margin: 0 auto;
     width: 944px;
@@ -16,7 +14,6 @@ body {
 }
 
 .header__nav {
-    outline: 1px solid black;
     height: 86px;
 }
 
@@ -59,13 +56,11 @@ body {
 }
 
 .header__title-wrapper {
-    outline: 1px solid black;
     display: flex;
     justify-content: space-between;
 }
 
 .header__title {
-    outline: 1px solid black;
     margin-top: 31px;
     font-family: 'Gilroy-Bold', sans-serif;
     font-size: 47.3px;
@@ -74,7 +69,6 @@ body {
 }
 
 .header__description {
-    outline: 1px solid black;
     margin-top: 92px;
     margin-left: -53px;
     font-family: 'Gilroy-Medium', sans-serif;
@@ -84,12 +78,10 @@ body {
 }
 
 .header__languages-info {
-    outline: 1px solid black;
     margin-top: 61px;
 }
 
 .header__photo-desktop {
-    outline: 1px solid black;
     margin-top: 43px;
     width: 100%;
     height: 387px;
@@ -97,7 +89,6 @@ body {
 }
 
 .header__photo-mobile {
-    outline: 1px solid black;
     display: none;
     margin: 41px auto 0;
     width: 84%;
@@ -118,7 +109,6 @@ body {
     }
 
     .header__nav {
-        outline: 1px solid black;
         background-color: #FFFFFF;
         position: absolute;
         top: 55px;
@@ -174,13 +164,11 @@ body {
 }
 
 .main {
-    outline: 1px solid black;
     min-width: 320px;
     padding-top: 102px;
 }
 
 .about {
-    outline: 1px solid black;
     background-color: #F6F6F6;
     min-width: 320px;
 }
@@ -232,7 +220,6 @@ body {
 }
 
 .skills {
-    outline: 1px solid black;
     min-width: 320px;
 }
 
@@ -245,14 +232,12 @@ body {
 }
 
 .skills__programs-list {
-    outline: 1px solid black;
     margin-top: 88px;
     display: flex;
     justify-content: space-between;
 }
 
 .skills__programs-item {
-    outline: 1px solid black;
     width: 177px;
     text-align: center;
 }
@@ -263,7 +248,6 @@ body {
 }
 
 .skills__programs-item figcaption {
-    outline: 1px solid black;
     box-sizing: border-box;
     margin-top: 20px;
     height: 34px;
@@ -326,7 +310,6 @@ body {
 }
 
 .portfolio {
-    outline: 1px solid black;
     background-color: #F6F6F6;
     min-width: 320px;
 }
@@ -338,7 +321,6 @@ body {
 
 .portfolio__item figure {
     margin: 58px auto 0;
-    /* max-width: 84%; */
 }
 
 .portfolio__item img {
@@ -382,7 +364,6 @@ body {
 }
 
 .footer {
-    outline: 1px solid black;
     min-width: 320px;
 }
 
@@ -409,15 +390,10 @@ body {
 }
 
 .footer__socials-list {
-    outline: 1px solid black;
     display: flex;
     justify-content: space-between;
     margin: 85px auto 0;
     width: 341px;
-}
-
-.footer__socials-item {
-    outline: 1px solid black;
 }
 
 .footer__socials-description {
