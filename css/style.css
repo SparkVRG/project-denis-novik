@@ -327,4 +327,136 @@ body {
 
 .portfolio {
     outline: 1px solid black;
+    background-color: #F6F6F6;
+    min-width: 320px;
+}
+
+.container_portfolio {
+    padding-top: 110px;
+    padding-bottom: 100px;
+}
+
+.portfolio__item figure {
+    margin: 58px auto 0;
+    /* max-width: 84%; */
+}
+
+.portfolio__item img {
+    width: 100%;
+}
+
+.portfolio__item figcaption {
+    margin-top: 38px;
+    text-align: center;
+}
+
+.portfolio__item a {
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 18px;
+    color: #070707;
+    text-align: center;
+}
+
+.portfolio__item:nth-of-type(n+2) {
+    margin-top: 104px;
+}
+
+@media screen and (max-width: 600px) {
+    .container_portfolio {
+        padding-top: 79px;
+        padding-bottom: 89px;
+    }
+
+    .portfolio__item figure {
+        margin-top: 77px;
+        max-width: 84%;
+    }
+
+    .portfolio__item figcaption {
+        margin-top: 28px;
+    }
+
+    .portfolio__item:nth-of-type(n+2) {
+        margin-top: 86px;
+    }
+}
+
+.footer {
+    outline: 1px solid black;
+    min-width: 320px;
+}
+
+.container_footer {
+    padding: 111px 0;
+}
+
+.section-description_footer {
+    margin-top: 30px;
+}
+
+.footer__button {
+    border: none;
+    border-radius: 20px;
+    background-color: #070707;
+    display: block;
+    margin: 32px auto 0;
+    width: 180px;
+    height: 42px;
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.footer__socials-list {
+    outline: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    margin: 85px auto 0;
+    width: 341px;
+}
+
+.footer__socials-item {
+    outline: 1px solid black;
+}
+
+.footer__socials-description {
+    margin-top: 41px;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+    text-align: center;
+}
+
+@media screen and (max-width: 375px) {
+    .container_footer {
+        padding: 77px 0;
+    }
+
+    .section-description_footer {
+        margin-top: 36px;
+    }
+
+    .footer__button {
+        margin: 43px auto 0;
+        width: 84%;
+    }
+
+    .footer__socials-list {
+        margin: 48px auto 0;
+        width: 84%;
+    }
+
+    .footer__socials-description {
+        margin-top: 42px;
+        font-size: 4.8vw;
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer__socials-description {
+        font-size: 15.3px;
+    }
 }
